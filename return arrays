@@ -1,0 +1,31 @@
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        // write a program to store students and student marks.
+        Scanner scanner= new Scanner(System.in);     // scannerinput
+        System.out.println(" How many subjects?");   //asking user for how many sub in order to find the length of array.
+        int numberofSubjects= scanner.nextInt();
+       int array[]= numbers(numberofSubjects);
+       for(int i=0;i<array.length; i++){
+           System.out.println(array[i]);
+
+
+       }
+
+    }
+    public  static int[] numbers( int numberofSubjects) {
+        int[] lofsub = new int[numberofSubjects];//created a variable so that i can return the values
+        for (int i = 0; i < numberofSubjects; i++) {
+            Scanner scanner= new Scanner(System.in);
+            System.out.println(" Type the number for" + i+ " one");
+            lofsub[i]=scanner.nextInt();    // that will save all numbers to array for example if the user type 21 for the 1st number it will store in the lofsub[0]
+        }
+        // this code will printn all the test numbers.
+
+        return lofsub;// those array variables will move to array[] then i will call out those variables.
+
+
+
+    }
+}
